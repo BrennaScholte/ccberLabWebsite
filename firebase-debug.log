@@ -1,0 +1,36 @@
+[debug] [2023-04-25T19:34:56.193Z] ----------------------------------------------------------------------
+[debug] [2023-04-25T19:34:56.195Z] Command:       /usr/local/bin/firebase /Users/brennascholte/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2023-04-25T19:34:56.195Z] CLI Version:   11.21.0
+[debug] [2023-04-25T19:34:56.196Z] Platform:      darwin
+[debug] [2023-04-25T19:34:56.196Z] Node Version:  v16.16.0
+[debug] [2023-04-25T19:34:56.197Z] Time:          Tue Apr 25 2023 12:34:56 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-04-25T19:34:56.197Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-25T19:34:56.291Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-25T19:34:56.292Z] > authorizing via signed-in user (brennascholte@gmail.com)
+[debug] [2023-04-25T19:34:56.292Z] [iam] checking project ucsb-aquatic-invertebrate for permissions ["firebase.projects.get"]
+[debug] [2023-04-25T19:34:56.294Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ucsb-aquatic-invertebrate:testIamPermissions [none]
+[debug] [2023-04-25T19:34:56.294Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ucsb-aquatic-invertebrate:testIamPermissions x-goog-quota-user=projects/ucsb-aquatic-invertebrate
+[debug] [2023-04-25T19:34:56.294Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ucsb-aquatic-invertebrate:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-25T19:34:56.653Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ucsb-aquatic-invertebrate:testIamPermissions 200
+[debug] [2023-04-25T19:34:56.653Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ucsb-aquatic-invertebrate:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-25T19:34:56.655Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate [none]
+[debug] [2023-04-25T19:34:56.929Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate 200
+[debug] [2023-04-25T19:34:56.930Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate {"projectId":"ucsb-aquatic-invertebrate","projectNumber":"714617324911","displayName":"ucsb-aquatic-invertebrate","name":"projects/ucsb-aquatic-invertebrate","resources":{"hostingSite":"ucsb-aquatic-invertebrate"},"state":"ACTIVE","etag":"1_dbd9bfc5-93f1-49de-b73c-5f6724a73a68"}
+[info] 
+[info] === Serving from '/Users/brennascholte/Documents/CCBER Internship/Aquatic Invertebrate Lab Website/Website (HTML Code)/aquatics-lab-website'...
+[info] 
+[debug] [2023-04-25T19:34:56.935Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/sites 
+[debug] [2023-04-25T19:34:57.623Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/sites 200
+[debug] [2023-04-25T19:34:57.623Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/sites {"sites":[{"name":"projects/ucsb-aquatic-invertebrate/sites/ucsb-aquatic-invertebrate","defaultUrl":"https://ucsb-aquatic-invertebrate.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-25T19:34:57.624Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/webApps/-/config [none]
+[debug] [2023-04-25T19:34:58.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/webApps/-/config 200
+[debug] [2023-04-25T19:34:58.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate/webApps/-/config {"projectId":"ucsb-aquatic-invertebrate","storageBucket":"ucsb-aquatic-invertebrate.appspot.com","apiKey":"AIzaSyBDdqT_Ed2W38g4a9C24tZxMhtBhDYkyNo","authDomain":"ucsb-aquatic-invertebrate.firebaseapp.com","messagingSenderId":"714617324911"}
+[debug] [2023-04-25T19:34:58.052Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate [none]
+[debug] [2023-04-25T19:34:58.277Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate 200
+[debug] [2023-04-25T19:34:58.277Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ucsb-aquatic-invertebrate {"projectId":"ucsb-aquatic-invertebrate","projectNumber":"714617324911","displayName":"ucsb-aquatic-invertebrate","name":"projects/ucsb-aquatic-invertebrate","resources":{"hostingSite":"ucsb-aquatic-invertebrate"},"state":"ACTIVE","etag":"1_dbd9bfc5-93f1-49de-b73c-5f6724a73a68"}
+[info] i  hosting[ucsb-aquatic-invertebrate]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[ucsb-aquatic-invertebrate]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2023:19:35:28 +0000] "GET /involved.html HTTP/1.1" 200 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2023:19:35:28 +0000] \"GET /involved.html HTTP/1.1\" 200 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2023:19:35:28 +0000] "GET /images/leader2.jpg HTTP/1.1" 200 246415 "http://localhost:5002/involved.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2023:19:35:28 +0000] \"GET /images/leader2.jpg HTTP/1.1\" 200 246415 \"http://localhost:5002/involved.html\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2023:19:35:32 +0000] "GET /videos/introVideo.mp4 HTTP/1.1" 200 207739360 "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2023:19:35:32 +0000] \"GET /videos/introVideo.mp4 HTTP/1.1\" 200 207739360 \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36\""}}
