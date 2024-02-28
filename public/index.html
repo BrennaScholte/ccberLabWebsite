@@ -1,0 +1,192 @@
+<!-- THIS FILE IS THE MAIN PAGE FOR THE WEBSITE - PLEASE EDIT CAREFULLY -->
+
+<!-- All Initial Code Created By: Brenna Scholte (brennascholte@gmail.com) -->
+
+<!-- PLEASE LIST NAME HERE IF EDITED THIS CODE -->
+<!-- Edited By:  -->
+
+<!DOCTYPE html>
+<html>
+  <!-- Container for metadata (not displayed) -->
+  <head>
+    <meta charset="UTF-8">
+    <title>UCSB Aquatic Invertebrates Lab</title>
+
+      <!-- Include style elements here -->
+    <style>
+      body {
+        background-color: #B6D0E2; /* background color of page */
+        margin: 0; /* set page margins */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  /* change font for all text */
+      }
+      /* Header 1 */
+      h1{
+        text-align: center; /* align the text */
+        color: black; /* change color of text */
+        font-size: 25px /* change font size for any text marked as h1 */
+      }
+      /* Header 2 */
+      h2{
+        text-align: center;
+        color: #466D1D;
+        font-size: 20px
+      }
+
+      /* Navigation Bar Style */
+      nav ul{
+        text-align: center;
+        padding: 0; /* set padding of specific object */
+        margin: 30px auto;
+      }
+      nav li{
+        display: inline-block;
+        margin: 0 10px;
+      }
+      nav a{
+        color: white;
+        background: #466D1D;
+        text-decoration: none;
+        padding: 6px 14px; 
+        border-radius: 4px; /* set radius of border */
+        box-shadow: 1px 1px 3px rgba(100,100,100,0.1); /* create a box shadow */
+        font-size: 15px
+      }
+
+      .welcomeText{
+        margin-left: 100px; /* set only left margin of text */
+        margin-right: 100px; /* set only right margin of text */
+        padding-bottom: 5px; /* set only bottom padding of text */
+        text-indent: 40px; /* indent text */
+        font-size: 16px;
+      }
+      .video{
+        text-align: center;
+        margin-right: 30px;
+      }
+      .mainPhoto{
+        text-align: center;
+      }
+      .welcomeScreen{
+        display: grid; /* create grid for pictures */
+        grid-template-columns: 50% 50%; /* set percentage depending on number of pictures in row; Ex: 3 pictures use 33% 33% 33% */
+        align-items: center;
+        margin-left: 75px;
+        margin-right: 75px;
+        padding-bottom: 15px;
+        padding-top: 50px;
+      }
+
+      /* Images */
+      img{
+        width: 80%; /* set width of image */
+        border: 4px solid #555; /* create border around images */
+      }
+      .sitesPhotos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-items: center;
+        margin-left: 105px;
+        margin-right: 45px;
+        padding-bottom: 50px;
+        padding-top: 35px;
+        border-color: #B6D0E2; /* set border color */
+      }
+      .image{
+        width: 110%;
+      }
+      figure {
+        border: 1px #cccccc solid;
+        padding: 2px;
+        margin: auto;
+      }
+      figcaption {
+        font-size: 14px;
+        color: black;
+        font-style: italic; /* italize font */
+        padding-top: 2px;
+        text-align: center;
+        padding-right: 45px;
+      }
+
+      /* Dotted Divider */
+      hr.dotted {
+        border-top: 3px dotted black; /* create dotted border divider */
+      }
+
+      /* WRITE MORE CSS (STYLE ELEMENTS) HERE  */
+  </style>
+</head>
+
+<body> <!-- Write All HTML Code in the Body Section  -->
+
+  <!-- Main Website Header -->
+  <h1>UCSB Aquatic Invertebrate Lab</h1>
+
+  <!-- Defines navigation links, use list -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class = "active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="involved.html">Get Involved</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+
+  <!-- Display Photo and Video in Grid Row -->
+  <div class = "welcomeScreen">
+    <div class = "mainPhoto">
+      <img src="images/nocs.jpg" alt="ncos" width="90%"> <!-- display photo; all photos store in "images" folder -->
+    </div>
+
+    <div class = "video">
+      <video width="90%" controls autoplay muted> <!-- set video to play automatically but muted and include controls to stop/start/etc. -->
+        <source src="videos/introVideo.mp4" type="video/mp4"> <!-- display video; all photos store in "videos" folder -->
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- Main Text about Lab -->
+  <div class = "welcomeText">
+    <article>
+      <p>The North Campus Open Space (<a href="https://www.ncos.ccber.ucsb.edu/">NCOS</a>) restoration project 
+        has created more than 40 acres of estuarine and palustrine wetlands that historically comprised the upper portion of 
+        Devereux Slough that was filled in the mid-1960s to create the Ocean Meadows golf course. 
+        The project is also restoring more than 60 acres of upland habitats that include native grassland, 
+        coastal sage scrub, riparian, oak chaparral woodland, vernal pools and patches of annual wildflowers 
+        in clay and sandy soils. </p>
+
+      <p>The aquatic invertebrate project aims to collect samples from sites of varying salinity to analyze 
+        the effect of salinity of aquatic organism abundance and diversity. We also aim to collect samples 
+        from sites with varying restoration progress. We sample Coal Oil point reserve as a reference site 
+        as the restoration of NCOS progresses.</p>
+    </article>
+  </div>
+
+  <!-- Dotted Divider Line -->
+  <hr class="dotted">
+
+  <!-- Grid of Photos -->
+  <div class = "sitesPhotos">
+    <figure> <!-- store photos in figures to create grid/row -->
+      <div class = "image"> <img src="images/sites1.jpg" alt="sites 1"> </div> <!-- create photo -->
+      <figcaption>Mouth of Devereux Slough (MO1) Site</figcaption> <!-- caption photo -->
+    </figure>
+    <figure>
+      <div class = "image"> <img src="images/sites2.jpg" alt="sites 2"> </div>
+      <figcaption>Invertebrate Monitoring Sites</figcaption>
+    </figure>
+    <figure>
+      <div class = "image"> <img src="images/webpage.jpeg" alt="webpage photo"> </div>
+      <figcaption>Students at NCOS</figcaption>
+    </figure>
+    <!-- <figure>
+      <div class = "image"> <img src="images/sites3.jpg" alt="sites 3"> </div>
+      <figcaption>North Campus Open Space</figcaption>
+    </figure> -->
+  </div>
+
+
+</body> <!-- Write All HTML Code in the Body Section, Do Not Change the Below Lines  -->
+</html>

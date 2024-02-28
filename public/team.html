@@ -1,0 +1,283 @@
+<!-- THIS FILE IS THE TEAM PAGE FOR THE WEBSITE - PLEASE EDIT CAREFULLY -->
+
+<!DOCTYPE html>
+<html>
+  <!-- Container for metadata (not displayed) -->
+  <head>
+    <meta charset="UTF-8">
+    <title>UCSB Aquatic Invertebrates Lab</title>
+
+      <!-- Include style elements here -->
+    <style>
+      body {
+        background-color: #B6D0E2;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        color: black;
+        font-size: 25px
+      }
+      h2 {
+        text-align: center;
+        color: #2B2D2F;
+        font-size: 20px
+      }
+      nav ul {
+        text-align: center;
+        padding: 0;
+        margin: 30px auto;
+      }
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        background: #466D1D;
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 3px rgba(100,100,100,0.1);
+        font-size: 15px
+      }
+      img {
+        width: 80%
+      }
+      .aboutText{
+        text-align: center;
+        margin-left: 75px;
+        margin-right: 75px;
+        padding-top: 10px;
+      }
+      .ccber {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-left: 75px;
+        margin-right: 75px;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+      box-sizing: inherit;
+      }
+      .row{
+        margin-left: 125px;
+        margin-right: 125px;
+        padding-top: 10px;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        margin-bottom: 12px;
+        padding: 0 25px;
+      }
+      .photocard {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px;
+      }
+      .name {
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+      }
+      .description {
+        padding: 0 15px;
+      }
+      .description::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .jobTitle {
+        color: #36454F;
+        font-size: 14px;
+        text-align: center;
+      }
+      .contactButton {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #466D1D;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      .contactButton:hover {
+        background-color: #555;
+      }
+      .alumni{
+        text-align: center;
+        list-style-position: inside;
+        padding-bottom: 75px;
+      }
+      .padding{
+        padding-top: 10px;
+      }
+      hr.dotted {
+        border-top: 3px dotted black;
+      }
+  </style>
+
+  </head>
+
+<body> <!-- Write All HTML Code in the Body Section  -->
+
+  <!-- Main Website Header -->
+  <h1>UCSB Aquatic Invertebrate Lab</h1>
+
+  <!-- Defines navigation links, use list -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="involved.html">Get Involved</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="team.html" class = "active">Team</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <h2>Our Team</h2>
+
+  <!-- Create and Display First Row of People -->
+  <div class="row">
+
+    <!-- First Column -->
+    <div class="column">
+      <div class="photocard"> <!-- create photocard section -->
+        <img src="images/tempPhoto2.jpg" alt="Alison" style="width:100%"> <!-- create photo -->
+        
+        <div class="description"> <!-- photo description -->
+          <div class="name"><p>Alison Rickard</p></div> <!-- person's name -->
+          <p class="jobTitle"> CCBER Research and Monitoring Coordinator</p> <!-- person's job title -->
+
+          <!-- create button to send email to this person; just change email address -->
+          <p><button class="contactButton" onclick="window.location.href='mailto:rickard@ccber.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/lauren.png" alt="Lauren" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Lauren Stiles</p></div>
+          <p class="jobTitle">Student Project Leader</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:laurenstiles@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/lily2.png" alt="Lily" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Lily Huynh</p></div>
+          <p class="jobTitle">Student Project Leader</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:lilyhuynh@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/chris.jpg" alt="Chris" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Chris Kracha</p></div>
+          <p class="jobTitle">Student Project Leader</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:cjkracha@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create and Display Second Row of People -->
+  <div class="row">
+
+    <!-- First Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/brenna.jpg" alt="Brenna" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Brenna Scholte</p></div>
+          <p class="jobTitle">Student Intern</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:brennascholte@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/kylie.jpg" alt="Kylie" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Kylie Malone</p></div>
+          <p class="jobTitle">Student Volunteer</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:kyliemalone@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Column -->
+    <div class="column">
+      <div class="photocard">
+        <img src="images/kristen.jpg" alt="Kristen" style="width:100%">
+        <div class="description">
+          <div class="name"><p>Kristen Russell</p></div>
+          <p class="jobTitle">Student Volunteer</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:kristenrussell@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNCOMMENT BELOW TO ADD NEW PERSON HERE -->
+    <!-- Fourth Column -->
+    <!-- <div class="column">
+      <div class="photocard">
+        <img src="images/tempPhoto2.jpg" alt="temp" style="width:100%">
+        <div class="description">
+          <div class="name"><p>FirstName LastName</p></div>
+          <p class="jobTitle">Job Title</p>
+          <p><button class="contactButton" onclick="window.location.href='mailto:__________@umail.ucsb.edu?subject=Get Involved with the Aquatic Invertebrate Lab!';">Contact</button></p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- Text about CCBER -->
+  <div class = "ccber">
+    <article>
+      <p>The UCSB Aquatic Invertebrate Lab is part of <a href="https://www.ccber.ucsb.edu/">CCBER</a> 
+        (Cheadle Center for Biodiversity and Ecological Restoration). CCBER fulfills the university's mission 
+        of education, research, and outreach through its stewardship and restoration of campus lands and preservation and
+        management of natural history collections. Check out their website to learn more.
+      </p>
+    </article>
+  </div>
+
+  <!-- Dotted Divider Line -->
+  <hr class="dotted">
+  <div class = "padding"></div> <!-- include padding between sections -->
+
+
+  <!-- Text about Lab Alumni -->
+  <h2>Alumni</h2>
+
+  <div class = "alumni">
+    <p>Hayden Vega (Fall 22, Winter 23)</p>
+    <!-- <p>Uncomment to add more alumni names here</p> -->
+  </div>
+
+
+</body> <!-- Write All HTML Code in the Body Section  -->
+</html>
